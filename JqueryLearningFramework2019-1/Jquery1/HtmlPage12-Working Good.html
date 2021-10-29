@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
+    <script src="../jquery-3.5.1.js"></script>
+
+    <script>
+        window.jQuery || document.write("<script src='Scripts/jquery-3.5.1.js'><\/script>");
+
+    </script>
+</head>
+<body>
+    <table id="table1" border="1">
+        <tr>
+            <td>C#</td>
+            <td>ASP.NET</td>
+            <td>SQL Server</td>
+        </tr>
+        <tr>
+            <td>ADO.NET</td>
+            <td>jQuery</td>
+            <td>JavaScript</td>
+        </tr>
+        <tr>
+            <td>AJAX</td>
+            <td>CSS</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>VB</td>
+            <td>Dot NET</td>
+            <td>Visual C++</td>
+        </tr>
+        <tr>
+            <td>Oracle</td>
+            <td>Java</td>
+            <td>J2EE</td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert($('td').length)
+
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert($('tr').length)
+
+        });
+
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert($('tr').css('background-color', 'yellow'));
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert($('table').html());
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('table tr').each(function () {
+
+                alert($(this).html())
+
+            });           
+                
+        });
+
+    </script>
+</body>
+</html>
